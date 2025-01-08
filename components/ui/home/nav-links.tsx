@@ -5,6 +5,7 @@ import {
   Clock10Icon,
   FilesIcon,
   HomeIcon,
+  SearchIcon,
   StarIcon,
   Trash2Icon,
 } from "lucide-react";
@@ -18,8 +19,8 @@ const links = [
     href: "/protected/shared",
     icon: FilesIcon,
   },
-  { name: "Reciente", href: "/protected/recent", icon: Clock10Icon },
   { name: "Destacados", href: "/protected/starred", icon: StarIcon },
+  { name: "Explora", href: "/protected/explore", icon: SearchIcon },
   { name: "Papelera", href: "/protected/trash", icon: Trash2Icon },
 ];
 
