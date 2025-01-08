@@ -4,7 +4,7 @@ import FileCard from "@/components/ui/file-card";
 import SearchInput from "@/components/ui/search-input";
 import { useState } from "react";
 import lists from "../../../utils/data/lists.json";
-import SuggestionsDropdown from "@/components/ui/sugestions-dropdown";
+import SuggestionsDropdown from "@/components/ui/suggestions-dropdown";
 
 export default function Home() {
   const [searchText, setSearchText] = useState("");
