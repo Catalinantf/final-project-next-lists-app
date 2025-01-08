@@ -1,3 +1,4 @@
+import { Todo } from "@/components/ui/home/TodoList/Todo";
 import { redirect } from "next/navigation";
 
 /**
@@ -13,4 +14,14 @@ export function encodedRedirect(
   message: string,
 ) {
   return redirect(`${path}?${type}=${encodeURIComponent(message)}`);
+}
+
+export function updateTaskItem(
+  tasksList: Todo[],
+  id: number,
+  updates?: { [key: string]: any }
+) {
+  return tasksList.map((task) =>
+    task.id === id ? { ...task, ...updates } : task
+  );
 }
